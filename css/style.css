@@ -1,0 +1,14 @@
+
+
+
+/* GRID */
+.gridContainerCol {
+    width: 32rem;
+    height: 32rem;
+}
+
+.gridSquare {
+    background-color: gray;
+    width: auto;
+    height: auto;
+}
