@@ -8,6 +8,12 @@
     padding: 0px;
 }
 
+
+/* Class name given to the ship square for prototyping and styling */
 .ship {
-    background-color: black;
+    /* background-color: black; */
+}
+
+.correct {
+    background-color: green;
 }
