@@ -24,13 +24,19 @@ console.log(gridSquares);
 
 
 //! User interaction
-
 for(let square of gridSquares) {
     square.addEventListener("click", () => {
     
         if (square.classList.contains("ship")) {
             console.log("Correct tile.");
             square.classList.add("correct");
+            //? Result
+            const newResult = document.createElement("h3");
+            newResult.innerText = "You win!"
+            //? Where I want to add result element:
+            const newResultContainer = document.getElementById("newResultContainer");
+            //? Append result element to container:
+            newResultContainer.appendChild(newResult);
         } else {
             console.log("Incorrect tile.");
             square.classList.add("incorrect");
