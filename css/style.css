@@ -21,3 +21,9 @@
 .incorrect {
     background-color: red;
 }
+
+.resultsCol h3 {
+    margin-top: 8rem;
+    text-align: center;
+    color: green;
+}
