@@ -24,21 +24,18 @@ console.log(gridSquares);
 
 
 //! User interaction
-gridSquares.addEventListener("click", () => {
-    console.log(gridSquares);
-    if (gridSquares.classList.contains("ship") == true) {
-        gridSquares.classList.add("correct");
-        console.log("Correct tile.");
-    }
-})
 
-
-
-
-
-
-
-
-
-
+for(let square of gridSquares) {
+    square.addEventListener("click", () => {
+    
+        if (square.classList.contains("ship")) {
+            console.log("Correct tile.");
+            square.classList.add("correct");
+        } else {
+            console.log("Incorrect tile.");
+            square.classList.add("incorrect");
+        }
+    
+    })
+}
 
